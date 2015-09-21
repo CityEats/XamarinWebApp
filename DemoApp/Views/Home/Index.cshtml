@@ -21,8 +21,15 @@
             font-size: 14px;
         }
     </style>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        var refresh = function(partySize) {
+            $("#size").html(partySize);
+        }
+    </script>
 </head>
     <body>
+        <p>Showing wait times for <span id="size">4</span> people.</p>
         <table>
             @foreach (var restaurant in Model)
             {
