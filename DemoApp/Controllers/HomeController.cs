@@ -14,10 +14,10 @@ namespace DemoApp.Controllers
         {
             var r = new Random();
             var restaurants = new List<RestaurantWaitTime>();
-            restaurants.Add(new RestaurantWaitTime { Name = "Fig", Minutes = r.Next(0, 60)});
-            restaurants.Add(new RestaurantWaitTime { Name = "Fork", Minutes = r.Next(0, 60) });
-            restaurants.Add(new RestaurantWaitTime { Name = "Plate", Minutes = r.Next(0, 60) });
-            restaurants.Add(new RestaurantWaitTime { Name = "Cup", Minutes = r.Next(0, 60) });
+            restaurants.Add(new RestaurantWaitTime { Name = "Fig", Minutes = r.Next(0, 5)});
+            restaurants.Add(new RestaurantWaitTime { Name = "Fork", Minutes = r.Next(0, 5) });
+            restaurants.Add(new RestaurantWaitTime { Name = "Plate", Minutes = r.Next(0, 5) });
+            restaurants.Add(new RestaurantWaitTime { Name = "Cup", Minutes = r.Next(0, 5) });
             return View(restaurants);
         }
     }
